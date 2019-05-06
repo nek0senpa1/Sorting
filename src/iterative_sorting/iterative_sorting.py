@@ -28,8 +28,18 @@ print(selection_sort(stuff))
 
 # TO-DO:  implement the Bubble Sort function below
 def bubble_sort( arr ):
+    isSomething = False
+
+    tabs = 0
+    while tabs[0] >= tabs[len(arr-1)]:
+        if arr[tabs] > arr [tabs+1]:
+            holder = arr[tabs]
+            arr[tabs] = arr[tabs+1]
+            arr[tabs+1] = holder
 
     return arr
+
+print(bubble_sort(stuff))
 
 
 # STRETCH: implement the Count Sort function below
