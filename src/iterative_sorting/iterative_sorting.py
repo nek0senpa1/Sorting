@@ -28,14 +28,20 @@ print(selection_sort(stuff))
 
 # TO-DO:  implement the Bubble Sort function below
 def bubble_sort( arr ):
-    isSomething = False
+    isSomething = True
 
     tabs = 0
-    while tabs[0] >= tabs[len(arr-1)]:
-        if arr[tabs] > arr [tabs+1]:
-            holder = arr[tabs]
-            arr[tabs] = arr[tabs+1]
-            arr[tabs+1] = holder
+    while isSomething == True:
+        for i in range(0, len(arr)-1):
+            if arr[tabs] > arr [tabs+1]:
+                holder = arr[tabs]
+                arr[tabs] = arr[tabs+1]
+                arr[tabs+1] = holder
+                
+        
+            else:
+                isSomething = False
+                print('true stuff reached')
 
     return arr
 
