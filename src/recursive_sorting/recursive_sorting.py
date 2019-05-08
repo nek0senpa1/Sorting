@@ -11,12 +11,15 @@ def merge( arrA, arrB ):
     thing2 = 0
     # print(merged_arr)
     for i in range(0, elements):
-        if thing1 >= len(arrA):
+        if thing1 >= arrA[thing2]:
             merged_arr[i] = arrB[thing2]
             thing2 = thing2+1
+            print('got to thing2', thing2)
         
-        elif thing2 >= len(arrB):
+        elif thing2 >= arrB[thing1]:
             merged_arr[i] = arrA[thing1]
+            thing1 = thing1 +1
+            print('got to thing1', thing1)
 
 
     return merged_arr
