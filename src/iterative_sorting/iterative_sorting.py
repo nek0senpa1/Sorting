@@ -37,11 +37,10 @@ def bubble_sort( arr ):
                 holder = arr[tabs]
                 arr[tabs] = arr[tabs+1]
                 arr[tabs+1] = holder
-                
-        
+                      
             else:
                 isSomething = False
-                print('true stuff reached')
+                print('No changes made to array item')
 
     return arr
 
